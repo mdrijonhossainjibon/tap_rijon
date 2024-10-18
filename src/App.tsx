@@ -12,7 +12,11 @@ const Earn = lazy(() => import('components/page/earn'));
 
 function App() {
 
-  
+  if (window.Telegram) {
+    console.log(window.Telegram)
+  }
+
+
   return (
     <Router>
       <Suspense fallback={<LoadingSpinner />}>
