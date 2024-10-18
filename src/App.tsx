@@ -11,6 +11,8 @@ const TonWallet = lazy(() => import("components/page/TonWallet"));
 const Earn = lazy(() => import('components/page/earn'));
 
 function App() {
+
+  
   return (
     <Router>
       <Suspense fallback={<LoadingSpinner />}>
